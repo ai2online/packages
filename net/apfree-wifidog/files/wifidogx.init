@@ -105,7 +105,7 @@ prepare_wifidog_conf() {
 
 	network_get_device external_interface wan
 
-	config_get gateway_id "${cfg}" "gateway_id" "${default_gateway_id}"
+	config_get gateway_id "${cfg}" "gateway_id" "gateway_id"
 	config_get gateway_interface "${cfg}" "gateway_interface" "br-lan"
 	config_get auth_server_hostname "${cfg}" "auth_server_hostname"
 	config_get auth_server_port "${cfg}" "auth_server_port" "80"
